@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhysicsHelp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <a href="/">Physics Help Application (Created by: Harshal Warade)</a>
+    </nav>
+    <!-- <div class="img">
+        <img src="impFormulas.png" alt="">
+    </div> -->
+    <form id="question">
+        <div>
+            <label for="color">What do you have to find?</label>
+            <select id="color">
+                <option value="--Nothing Selected--">--Nothing Selected--</option>
+                <option value="Cladding Index">Cladding Index</option>
+                <option value="Critical Angle">Critical Angle</option>
+                <option value="Acceptance Angle">Acceptance Angle</option>
+                <option value="Fractional Refractive Index">Fractional Refractive Index</option>
+                <option value="Numerical Apperatus">Numerical Apperatus</option>
+                <option value="Attenuation">Attenuation</option>
+                <option value="Length of fiber (for attenuation)">Length of fiber (for attenuation)</option>
+            </select>
+        </div>
+
+        <div class="process">
+            <button id="btn">Process</button>
+            <a href="/">Clear Page</a>
+        </div>
+    </form>
+
+    <div id="further">
+        <h2 class="mainHeading">To find: <p id="findQuestion"></p>
+        </h2>
+        <br>
+        <b style="color: red;">NOTE: For complete accuracy, the answers in this calculator should only be utilized up to three decimals.</b>
+        <span id="arriveFOR"></span>
+        <div id="fill">
+            <input type="number" id="refOptics" placeholder="Enter refractive Index of the Fiber Optics">
+            <input type="number" id="fractionalIndexDifference" placeholder="Enter fractional Index difference">
+            <input type="number" id="refCladding" placeholder="Enter refractive Index of the Cladding">
+            <input type="number" id="criticalAngle" placeholder="Enter the Critical Angle">
+            <input type="number" id="acceptanceAngle" placeholder="Enter Acceptance Angle">
+            <input type="number" id="numericalApperature" placeholder="Enter Numerical Apperature">
+            <input type="number" id="inputPower" placeholder="Enter input power (in miliWatts)">
+            <input type="number" id="outputPower" placeholder="Enter output power (in miliWatts)">
+            <input type="number" id="attenuation" placeholder="Enter attenuation">
+            <input type="number" id="lengthoffiber" placeholder="Enter length of fiber (in km)">
+        </div>
+        <div class="buttonCalculate">
+            <button id="calculate">calculate</button>
+        </div>
+    </div>
+    <div id="results">
+        <p id="disrefOptics">The refractive index of the fiber optics is: <span id="resdisrefOptics"></span></p>
+        <p id="disfractionalIndexDifference">The fractional index difference of the fiber optics is: <span id="resdisfractionalIndexDifference"></span>
+        </p>
+        <p id="disrefCladding">The refractive index of the cladding is: <span id="resdisrefCladding"></span></p>
+        <p id="discriticalAngle">The critical angle is: <span id="resdiscriticalAngle"></span></p>
+        <p id="disacceptanceAngle">The acceptance angle is: <span id="resdisacceptanceAngle"></span></p>
+        <p id="disnumericalApperature">The numerical apperature is: <span id="resdisnumericalApperature"></span></p>
+        <p id="disinputPower">The input power is: <span id="resdisinputPower"></span></p>
+        <p id="disoutputPower">The output power is: <span id="resdisoutputPower"></span></p>
+        <p id="disattenuation">The attenuation is: <span id="resdisattenuation"></span></p>
+        <p id="dislengthoffiber">The length of the fiber is: <span id="resdislengthoffiber"></span></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
